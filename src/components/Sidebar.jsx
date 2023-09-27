@@ -1,15 +1,49 @@
-import { Box } from "@mui/material";
+import {
+  Box,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+} from "@mui/material";
+// import InboxIcon from '@mui/icons-material/Inbox';
+import { Home, Article, Groups } from "@mui/icons-material";
+
 import React from "react";
 
 const Sidebar = () => {
   return (
-    <Box
-      bgcolor={"skyblue"}
+    <Box    
       flex={1}
       p={2}
       sx={{ display: { xs: "none", sm: "block" } }}
     >
-      Sidebar
+      <List>
+        <ListItem disablePadding>
+          <ListItemButton component="a" href="#home">
+            <ListItemIcon>
+              <Home />
+            </ListItemIcon>
+            <ListItemText primary="Homepage" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton component="a" href="#pages">
+            <ListItemIcon>
+              <Article />
+            </ListItemIcon>
+            <ListItemText primary="Pages" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton component="a" href="#groups">
+            <ListItemIcon>
+              <Groups />
+            </ListItemIcon>
+            <ListItemText primary="Groups" />
+          </ListItemButton>
+        </ListItem>
+      </List>
     </Box>
   );
 };
