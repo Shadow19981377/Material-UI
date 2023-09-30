@@ -7,7 +7,7 @@ import {
   ListItemText,
 } from "@mui/material";
 // import InboxIcon from '@mui/icons-material/Inbox';
-import { Home, Article, Groups, Storefront } from "@mui/icons-material";
+import { Home, Article, Groups, Storefront, AccountBox, Settings, Diversity1, Diversity2 } from "@mui/icons-material";
 
 import React from "react";
 
@@ -45,6 +45,30 @@ const Sidebar = () => {
               <Storefront />
             </ListItemIcon>
             <ListItemText primary="Marketplace" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton component="a" href="#friends">
+            <ListItemIcon>
+              <Diversity2 />
+            </ListItemIcon>
+            <ListItemText primary="Friends" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton component="a" href="#settings">
+            <ListItemIcon>
+              <Settings />
+            </ListItemIcon>
+            <ListItemText primary="Settings" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton component="a" href="#profile">
+            <ListItemIcon>
+              <AccountBox />
+            </ListItemIcon>
+            <ListItemText primary="Profile" />
           </ListItemButton>
         </ListItem>
       </List>
