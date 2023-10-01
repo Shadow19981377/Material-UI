@@ -5,9 +5,10 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Switch,
 } from "@mui/material";
 // import InboxIcon from '@mui/icons-material/Inbox';
-import { Home, Article, Groups, Storefront, AccountBox, Settings, Diversity1, Diversity2 } from "@mui/icons-material";
+import { Home, Article, Groups, Storefront, AccountBox, Settings, Diversity1, Diversity2, ModeNight } from "@mui/icons-material";
 
 import React from "react";
 
@@ -69,6 +70,14 @@ const Sidebar = () => {
               <AccountBox />
             </ListItemIcon>
             <ListItemText primary="Profile" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton component="a" href="#switch">
+            <ListItemIcon>
+              <ModeNight />
+            </ListItemIcon>
+            <Switch />
           </ListItemButton>
         </ListItem>
       </List>
